@@ -1,0 +1,64 @@
+ .inspiration .inspirationInside .propertyCard {
+    width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails {
+	 border: 1px solid #d7d7d7;
+	 border-radius: 15px;
+	 padding: 10px;
+	 display: flex;
+	 flex-direction: column;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .propertyImage {
+	 position: relative;
+	 z-index: -1;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .propertyImage .propertyPix img {
+	 border-radius: 15px;
+	 width: 260px;
+	 height: 265px;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .propertyImage .heart {
+	 font-size: 40px;
+	 color: white;
+	 position: absolute;
+	 top: -5px;
+	 left: 220px;
+	 z-index: 10;
+     cursor: pointer;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .propertyImage .heart a {
+	 
+	 color: white;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .propertyImage .hearta:hover {
+	 
+	 color: red;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .details {
+	 display: flex;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow1, .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow2 {
+	 padding-top: 10px;
+	 display: flex;
+	 justify-content: space-between;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow1 .detailLight, .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow2 .detailLight {
+	 font-size: 12px;
+	 font-weight: 400;
+	 color: #434343;
+}
+ .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow1 .detailBold, .inspiration .inspirationInside .propertyCard .propertyDetails .details .detailsRow2 .detailBold {
+	 font-size: 12px;
+	 font-weight: 700;
+	 color: #434343;
+}
+
+.ratings{
+    text-align: left;
+    margin-top: 5px;
+}

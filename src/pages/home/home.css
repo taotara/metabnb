@@ -1,0 +1,193 @@
+.hero {
+	 width: 90%;
+	 margin: 0 auto;
+	 padding: 50px 0;
+	 display: flex;
+	 justify-content: space-between;
+	 gap: 80px;
+}
+ .hero .heroLeft {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-around;
+}
+ .hero .heroLeft .title {
+	 font-size: 56px;
+	 font-weight: 400;
+	 color: #434343;
+	 line-height: 74.8px;
+}
+ .hero .heroLeft .title span {
+	 background: -webkit-linear-gradient(80deg, #a02279 79.31%, rgba(255, 192, 137, 0.6) 100%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 font-weight: 700;
+}
+ .hero .heroLeft p {
+	 font-size: 24px;
+	 font-weight: 400;
+	 color: #434343;
+     text-align-last: left;
+}
+ .hero .heroLeft form {
+	 display: flex;
+}
+ .hero .heroLeft form input {
+	 width: 63%;
+	 border: 1px solid #a3a3a3;
+	 border-radius: 8px 0 0 8px;
+	 background-color: #f7f7f7;
+	 height: 54px;
+	 font-size: 14px;
+	 font-weight: 400;
+	 color: #b8b8b8;
+	 padding: 10px;
+}
+ .hero .heroLeft form button {
+	 width: 37%;
+	 font-size: 16px;
+	 font-weight: 400;
+	 color: white;
+	 background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+	 padding: 15px 25px;
+	 outline: none;
+	 border: none;
+	 border-radius: 0 8px 8px 0;
+}
+ .hero .heroLeft form button:hover {
+	 background: linear-gradient(90deg, #a02278 c4 11.45%, #a02278 c4 11.45%);
+}
+ .hero .heroRight {
+	 flex-grow: 1;
+	 display: grid;
+	 gap: 10px;
+	 grid-template-columns: repeat(2, 1fr);
+	 grid-template-areas: "g1 g2" "g1 g4" "g3 g4";
+}
+ .hero .heroRight img {
+	 width: 234px;
+	 height: 176px;
+	 border-radius: 15px;
+}
+ .hero .heroRight .g1 {
+	 grid-area: g1;
+	 align-self: end;
+	 margin-top: 90px;
+}
+ .hero .heroRight .g2 {
+	 grid-area: g2;
+	 align-self: start;
+}
+ .hero .heroRight .g3 {
+	 grid-area: g3;
+	 align-self: end;
+}
+ .hero .heroRight .g4 {
+	 grid-area: g4;
+	 align-self: start;
+}
+ .coinTable {
+	 background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+ .coinTable .coins {
+	 width: 90%;
+	 margin: 0 auto;
+	 padding: 20px;
+	 display: flex;
+	 justify-content: space-around;
+	 align-items: center;
+}
+ .coinTable .coins .token {
+	 height: 50px;
+}
+ .coinTable .coins .metalmask {
+	 height: 37.56px;
+}
+ .coinTable .coins .opensea {
+	 height: 40.79px;
+}
+ .inspiration {
+	 width: 100%;
+}
+ .inspiration .inspirationInside {
+	 width: 90%;
+	 margin: 50px auto;
+	 display: flex;
+	 flex-direction: column;
+	 gap: 20px;
+}
+ .inspiration .inspirationInside .title {
+	 font-size: 48px;
+	 font-weight: 700;
+	 color: #000;
+	 align-self: center;
+}
+
+ .homeBot {
+	 width: 100%;
+	 background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+ .homeBot .homeBotContainer {
+	 width: 90%;
+	 margin: 0 auto;
+	 padding: 100px 0;
+	 display: flex;
+	 gap: 90px;
+}
+ .homeBot .homeBotContainer .homeBotLeft {
+	 display: flex;
+	 flex-direction: column;
+	 gap: 50px;
+}
+ .homeBot .homeBotContainer .homeBotLeft .title {
+	 font-size: 62px;
+	 font-weight: 700;
+	 color: white;
+}
+ .homeBot .homeBotContainer .homeBotLeft p {
+	 font-size: 18px;
+	 font-weight: 400;
+	 color: white;
+     text-align: left;
+}
+ .homeBot .homeBotContainer .homeBotLeft button {
+	 width: 160px;
+	 padding: 14px 33px;
+	 border: none;
+	 border-radius: 8px;
+	 font-size: 16px;
+	 font-weight: 400;
+	 color: #a02279;
+}
+ .homeBot .homeBotContainer .homeBotRight {
+	 display: grid;
+	 grid-template-columns: repeat(2, 1fr);
+	 grid-template-areas: "botImg1 botImg1" "botImg2 botImg3";
+}
+ .homeBot .homeBotContainer .homeBotRight .botImg1 {
+	 grid-area: botImg1;
+	 align-self: end;
+	 transform: rotate(17.76deg);
+	 margin-left: 220px;
+	 margin-bottom: -30px;
+}
+ .homeBot .homeBotContainer .homeBotRight .botImg2 {
+	 grid-area: botImg2;
+	 align-self: start;
+	 transform: rotate(-26.02deg);
+	 margin-top: -30px;
+}
+ .homeBot .homeBotContainer .homeBotRight .botImg3 {
+	 grid-area: botImg3;
+	 align-self: center;
+	 transform: rotate(-8.76deg);
+	 margin-left: -130px;
+	 margin-top: 20px;
+}
+ .homeBot .homeBotContainer .homeBotRight img {
+	 width: 378px;
+	 height: 253px;
+	 border-radius: 10px;
+}
+
+ 
