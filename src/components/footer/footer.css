@@ -1,0 +1,63 @@
+ footer {
+	 background-color: #1d1d1e;
+	 width: 100%;
+}
+ 
+ footer .container {
+	 width: 90%;
+	 margin: 0 auto;
+	 padding-top: 50px;
+	 color: white;
+	 display: flex;
+	 flex-direction: column;
+}
+
+.footerTop {
+	 display: flex;
+     flex-direction: column;
+	 justify-content: space-between;
+}
+
+.social {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+
+.media{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+ .community .title, .places .title, .about .title {
+	 font-size: 18px;
+	 font-weight: 700;
+	 margin-bottom: 20px;
+     text-align: left;
+}
+
+ .community li, .places li, .about li {
+	 padding-bottom: 15px;
+     text-align: left;
+}
+.community a, .places a,  .about a {
+	 font-size: 14px;
+	 font-weight: 400;
+	 list-style: none;
+	 text-decoration: none;
+	 color: white;
+}
+.community a:hover, .places a:hover,  .about a:hover {
+	 color: #a02279;
+}
+
+@media screen and (min-width: 960px) {
+     .footerTop {
+	 display: flex;
+     flex-direction: row;
+	 justify-content: space-between;
+}
+
+}

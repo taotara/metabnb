@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './header.css';
@@ -13,35 +13,48 @@ function Header() {
 
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click)
-  const closeMobileMenu = () => setClick(false)
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
   return (
     
-    <header className='header'>
+    <>
         
         <nav className='navbar'>
           <div className="navbar-container container">
-            <Link to="/" className='navbar-logo'> <img src={logo} alt="Metbnb" className='logo' onClick={closeMobileMenu} /> </Link>
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}> <img src={logo} alt="Metbnb" className='logo' onClick={closeMobileMenu} /> </Link>
           </div>
           <div className="menu-icon" onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
+              {click ? <FaTimes /> : <FaBars />}
           </div>
-            
-            <div className="navigation-menu">
-              <ul>
-                  <Link to="/">Home</Link>
-                  <Link to="place-to-stay">Place to stay</Link>
-                  <Link to="/">NFTS</Link>
-                  <Link to="/">Community</Link>
-              </ul>
-            </div>
-            
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className='nav-item'>
+              <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}onClick={closeMobileMenu}>
+                Home
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink to="place-to-stay" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}onClick={closeMobileMenu}>
+                Place to stay
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}onClick={closeMobileMenu}>
+                NFTS
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink to="#" className={({ isActive }) => "nav-links" + (isActive ? " activated" : "")}onClick={closeMobileMenu}>
+                Community
+              </NavLink>
+            </li>
+            </ul>
+            <button className='btn' onClick={() => setOpenModal(true)}>Connect wallet</button>
         </nav>
         
-        <button className='btn' onClick={() => setOpenModal(true)}>Connect wallet</button>
+        
         <Modal open={openModal} />
-    </header>
+    </>
   )
 }
 
