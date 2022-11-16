@@ -1,30 +1,23 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-} from "react-router-dom";
-import PlaceToStay from './pages/placeToStay/PlaceToPlay'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+import PlaceToStay from './pages/placeToStay/PlaceToPlay';
+import Modal from './components/modal/Modal';
+
+function App() {
+    const [openModal, setOpenModal] = useState(false);
+  return (
+    <div className="App">
         <Header />
-        <Router>
-          <Routes>
-            <Route path="/place-to-stay" element={<PlaceToStay />} />
-            <Route path="/" element={<Home />} />
-          </Routes>
-      </Router>
+        <Modal open={openModal} onClose={() => setOpenModal(false)} />
+        
+        
         <Footer />
       </div>
-    );
-  }
+  )
 }
 
-export default App;
+export default App

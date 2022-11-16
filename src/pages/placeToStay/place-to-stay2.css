@@ -1,0 +1,111 @@
+.placetostay{
+    width: 100%;
+    margin: 50px 0;
+}
+
+.sort{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.sort ul{
+    display: flex;
+	list-style: none;
+}
+
+.sort ul a{
+    color: #434343;
+	padding-left: 30px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.sort ul a:hover {
+	color: #a02279;
+}
+
+.sort .btn {
+    display: flex;
+    gap: 20px;
+    justify-content: cente;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333333;
+	background: linear-gradient(124.4deg, #FFFFFF 10.8%, #FFFFFF 87.34%);;
+	padding: 15px 25px;
+	border: 1px solid #B4B4B4;
+    border-radius: 8px;
+}
+
+
+.propertyCard {
+    width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+}
+.propertyCard .propertyDetails {
+	 border: 1px solid #d7d7d7;
+	 border-radius: 15px;
+	 padding: 10px;
+	 display: flex;
+	 flex-direction: column;
+}
+.propertyCard .propertyDetails .propertyImage {
+	 position: relative;
+	 z-index: -1;
+}
+.propertyCard .propertyDetails .propertyImage .propertyPix img {
+	 border-radius: 15px;
+	 width: 260px;
+	 height: 265px;
+}
+.propertyCard .propertyDetails .propertyImage .heart {
+	 font-size: 40px;
+	 color: white;
+	 position: absolute;
+	 top: 0px;
+	 left: 220px;
+	 z-index: 10;
+     cursor: pointer;
+}
+.propertyCard .propertyDetails .propertyImage .heart a {
+	 
+	 color: white;
+}
+.propertyCard .propertyDetails .propertyImage .hearta:hover {
+	 
+	 color: red;
+}
+.propertyCard .propertyDetails .details {
+	 display: flex;
+	 flex-direction: column;
+	 flex-wrap: wrap;
+}
+.propertyCard .propertyDetails .details .detailsRow1, .propertyCard .propertyDetails .details .detailsRow2 {
+	 padding-top: 10px;
+	 display: flex;
+	 justify-content: space-between;
+}
+.propertyCard .propertyDetails .details .detailsRow1 .detailLight, .propertyCard .propertyDetails .details .detailsRow2 .detailLight {
+	 font-size: 12px;
+	 font-weight: 400;
+	 color: #434343;
+}
+.propertyCard .propertyDetails .details .detailsRow1 .detailBold, .propertyCard .propertyDetails .details .detailsRow2 .detailBold {
+	 font-size: 12px;
+	 font-weight: 700;
+	 color: #434343;
+}
+
+.ratings{
+    text-align: left;
+    margin-top: 5px;
+}

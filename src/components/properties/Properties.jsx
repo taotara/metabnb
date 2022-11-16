@@ -1,19 +1,19 @@
 import React from 'react'
 import './properties.css';
-import DesertKing from '../../img/Frame 151.png';
+import DesertKing from '../../img/Frame 151.jpg';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import DesertKing2 from '../../img/Frame 151-1.png';
-import DesertKing3 from '../../img/Frame 151-2.png';
-import DesertKing4 from '../../img/Frame 151-3.png';
-import DesertKing5 from '../../img/Frame 151-4.png';
-import DesertKing6 from '../../img/Frame 151-5.png';
-import DesertKing7 from '../../img/Frame 151-6.png';
-import DesertKing8 from '../../img/Frame 151-7.png';
+import DesertKing2 from '../../img/Frame 151-1.jpg';
+import DesertKing3 from '../../img/Frame 151-2.jpg';
+import DesertKing4 from '../../img/Frame 151-3.jpg';
+import DesertKing5 from '../../img/Frame 151-4.jpg';
+import DesertKing6 from '../../img/Frame 151-5.jpg';
+import DesertKing7 from '../../img/Frame 151-6.jpg';
+import DesertKing8 from '../../img/Frame 151-7.jpg';
 
 
 
@@ -33,7 +33,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -67,7 +67,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing2} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -101,7 +101,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing3} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -135,7 +135,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing4} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -169,7 +169,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing5} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -203,7 +203,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing6} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -237,7 +237,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing7} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -271,7 +271,7 @@ function Properties() {
                     <article className="propertyDetails">
                         <div className="propertyImage">
                             <div className="propertyPix"><img src={DesertKing8} alt="" /></div>
-                            <div className="heart"><a href="#"><FavoriteIcon /></a></div>
+                            <div className="heart"><a href="/"><FavoriteIcon /></a></div>
                         </div>
                         <div className="details">
                             <div className="detailsRow1">
@@ -301,7 +301,7 @@ function Properties() {
                             </Box>
                         </div>
                     </article>
-                </div>
+    </div>
   )
 }
 
