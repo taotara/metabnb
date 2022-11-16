@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 import logo from '../../img/metabnblogo.png';
-import Modal from '../modal/Modal';
+import NewModdal from '../modal/NewModdal';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 function Header() {
   
-  const [openModal, setOpenModal] = useState(false);
+  
 
   const [click, setClick] = useState(false);
 
@@ -49,11 +49,10 @@ function Header() {
               </NavLink>
             </li>
             </ul>
-            <button className='btn' onClick={() => setOpenModal(true)}>Connect wallet</button>
+            <NewModdal />
         </nav>
         
         
-        <Modal open={openModal} />
     </>
   )
 }

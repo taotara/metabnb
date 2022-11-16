@@ -1,22 +1,38 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import './modal.css';
 import Metamask from '../../img/image 66.png';
 import WalletConnect from '../../img/image 69.png';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import './modal.css';
 
+function NewModdal() {
+  const [show, setShow] = useState(false);
 
-const [openModal, setOpenModal] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-function Modal({ open, onClose }) {
-    if(!open) return null;
   return (
-    <div onClick={onClose} className='overlay'>
-        <div onClick={(e) => {
-          e.stopPropagation()
-        }} className="modalContainer">
-            <div className="modalTop">
-              <h2 className='modalTitle'>Connect Wallet</h2>
-              <p onClick={onClose} className="close">X</p>
+    <>
+      <Button  onClick={handleShow}>
+        Connect wallet
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <h2 className='modalTitle'>Connect Wallet</h2>
+        </Modal.Header>
+        <Modal.Body>
+        
+          <div className="modalTop">
+              
+              
             </div>
             <div className="modalBottom">
               <p className="modalText">Choose your preferred wallet:</p>
@@ -37,12 +53,10 @@ function Modal({ open, onClose }) {
                 <div className="chev"><ChevronRightIcon /></div>
               </div>
             </div>
-        </div>
-
-        <button className='btn' onClick={() => setOpenModal(true)}>Connect wallet</button>
-        <Modal open={openModal} />
-    </div>
-  )
+        </Modal.Body>
+        
+      </Modal>
+    </>
+  );
 }
-
-export default Modal
+export default NewModdal;

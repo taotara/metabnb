@@ -51,7 +51,7 @@
 }
 
 .nav-item:hover {
-  border-bottom: 2px solid #a02279;
+  color: #a02279;
 }
 
 .nav-links {

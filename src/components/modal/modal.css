@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 1px #CFD8DC;
+    /* border-bottom: solid 1px #CFD8DC; */
     padding: 0 40px 20px 40px;
 }
 

@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import PlaceToStay from "./pages/placeToStay/PlaceToPlay";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const AppLayout = () => {
