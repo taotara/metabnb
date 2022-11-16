@@ -7,7 +7,7 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 50px;
     align-items: center;
 }
@@ -108,15 +108,4 @@
 .ratings{
     text-align: left;
     margin-top: 5px;
-}
-
-@media screen and (min-width: 960px) {
-    .sort{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-}
 }
